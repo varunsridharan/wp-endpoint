@@ -53,3 +53,24 @@ class VS_CALLBACK_HANDLER{
 
 ```
 ---
+
+### Add Rewrite Rules [ add_rewrite_rule( $path, $after ) ]
+```php
+/**
+ * Adds Custom Rewrite Rules.
+ *
+ * @param string $path
+ * @param string $after
+ *
+ * @return $this
+ */
+```
+
+#### PHP Code
+```php
+// Below Will Be Converted into **http://example.com/mypath/22/xxx/
+$vs_wp_endpoint->add_rewrite_rule('mypath/{user_id}/{user_name}','top');
+
+// Below Will Be Converted into **http://example.com/welcome/EICAUTPPWICAASJEJNCA/
+$vs_wp_endpoint->add_rewrite_rule('welcome/{verify_id}','top');
+```
