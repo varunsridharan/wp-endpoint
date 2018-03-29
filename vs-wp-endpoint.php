@@ -2,8 +2,8 @@
 /**
  * VS WP Endpoint Handler.
  *
- * @name         : VS WP Endpoint Handler.
- * @version      : 1.0
+ * @name: VS WP Endpoint Handler.
+ * @version: 1.0
  * @created_date : 29-03-2018
  * @created_time : 07:54 AM
  * @package      : vs-wp-endpoint
