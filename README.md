@@ -21,7 +21,9 @@ $vs_wp_endpoint = new VS_WP_Endpoint('customprefix');
  *
  * @return $this
  */
- 
+ ```
+ #### PHP Code
+ ```php
  // With Action Trigger
  $vs_wp_endpoint->add_endpoint('myendpoint',EP_ROOT,'myendpoint_action');
  
@@ -38,6 +40,10 @@ function render_endpoint_page($wp){
 	var_dump($wp->query_vars);
 }
 
+function myendpoint_callback($wp){
+	var_dump($wp->query_vars);
+}
+
 class VS_CALLBACK_HANDLER{
 	public static function render($wp){
 		echo 'Hi'
@@ -46,3 +52,4 @@ class VS_CALLBACK_HANDLER{
 
 
 ```
+---
