@@ -1,11 +1,17 @@
 <?php
 /**
- * VS WP Router.
+ * VS WP Endpoint Handler.
  *
- * @author    Varun Sridharan <varunsridharan23@gmail.com>
- * @since     1.0
- * @version   1.0
- * @copyright GPL V3 Or greater
+ * @name         : VS WP Endpoint Handler.
+ * @version      : 1.0
+ * @created_date : 29-03-2018
+ * @created_time : 07:54 AM
+ * @package      : vs-wp-endpoint
+ * @since        : 1.0
+ * @github       : https://github.com/varunsridharan/vs-wp-endpoint
+ * @author       : Varun Sridharan <varunsridharan23@gmail.com>
+ * @copyright    : 2018 Varun Sridharan
+ * @license      : GPLV3 Or Greater (https://www.gnu.org/licenses/gpl-3.0.txt)
  */
 
 /**
