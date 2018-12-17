@@ -1,0 +1,33 @@
+{
+  "name"        : "varunsridharan/wp-endpoint",
+  "description" : "Simple Lib To Handle Creation of Custom Endpoints Or Rewrites in WordPress ",
+  "type"        : "library",
+  "license"     : "GPL-3.0-or-later",
+  "keywords"    : [
+	"wordpress",
+	"wordpress-plugin",
+	"wordpress-php-library",
+	"wordpress-development",
+	"wordpress-plugin-library",
+	"wordpress-plugin-development",
+	"wordpress-router",
+	"wordpress-plugin-addon",
+	"wordpress-endpoint",
+	"wordpress-library",
+	"wordpress-development-kit",
+	"wordpress-plugins",
+	"rewrites",
+	"php",
+	"wp-endpoint",
+	"vsp-libs"
+  ],
+  "authors"     : [
+	{
+	  "name"     : "Varun",
+	  "email"    : "varunsridharan23@gmail.com",
+	  "homepage" : "https://varunsridharan.in",
+	  "role"     : "Developer"
+	}
+  ],
+  "require"     : { }
+}

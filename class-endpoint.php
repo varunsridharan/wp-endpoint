@@ -1,24 +1,21 @@
 <?php
 /**
- * VS WP Endpoint Handler.
+ * Simple Lib To Handle Creation of Custom Endpoints Or Rewrites in WordPress.
  *
- * @name: VS WP Endpoint Handler.
- * @version: 1.0
- * @Date      29-03-2018
- * @Time      07:54 AM
- * @github    https://github.com/varunsridharan/vs-wp-endpoint
  * @author    Varun Sridharan <varunsridharan23@gmail.com>
- * @package   vs-wp-libs
  * @copyright 2018 Varun Sridharan
  * @license   GPLV3 Or Greater
- * @since     1.0
  */
+
+namespace Varunsridharan\WordPress;
 
 /**
  * Class VS_WP_Endpoint
+ *
+ * @author Varun Sridharan <varunsridharan23@gmail.com>
+ * @since 1.0
  */
-class VS_WP_Endpoint {
-
+class Endpoint {
 	/**
 	 * Version
 	 *
@@ -74,9 +71,9 @@ class VS_WP_Endpoint {
 	 */
 	public function __construct( $prefix = '' ) {
 		$this->prefix( $prefix );
-		add_action( 'init', array( &$this, 'on_wp_init' ) );
-		add_action( 'parse_request', array( $this, 'parse_request' ) );
-		add_filter( 'query_vars', array( $this, 'add_query_vars' ), 0 );
+		\add_action( 'init', array( &$this, 'on_wp_init' ) );
+		\add_action( 'parse_request', array( $this, 'parse_request' ) );
+		\add_filter( 'query_vars', array( $this, 'add_query_vars' ), 0 );
 		#add_action( 'wp_loaded', array( $this, 'flush' ) );
 	}
 
@@ -109,7 +106,7 @@ class VS_WP_Endpoint {
 						$param    = ( true === $is_arr ) ? array( $wp ) : $wp;
 						$callback( $this->rewrite_endpoint[ $key ]['callback'], $param );
 					} else {
-						do_action( $this->rewrite_endpoint[ $key ]['callback'], $wp );
+						\do_action( $this->rewrite_endpoint[ $key ]['callback'], $wp );
 					}
 				}
 			}
@@ -122,7 +119,7 @@ class VS_WP_Endpoint {
 	 * @return void
 	 */
 	public function flush() {
-		flush_rewrite_rules();
+		\flush_rewrite_rules();
 	}
 
 	/**
@@ -142,7 +139,7 @@ class VS_WP_Endpoint {
 	protected function register_rewrite_rules() {
 		if ( ! empty( $this->rewrite_rule ) ) {
 			foreach ( $this->rewrite_rule as $value ) {
-				add_rewrite_rule( $value['regex'], $value['replace'], $value['type'] );
+				\add_rewrite_rule( $value['regex'], $value['replace'], $value['type'] );
 			}
 		}
 	}
@@ -153,7 +150,7 @@ class VS_WP_Endpoint {
 	protected function register_rewrite_tags() {
 		if ( ! empty( $this->rewrite_tag ) ) {
 			foreach ( $this->rewrite_tag as $param => $value ) {
-				add_rewrite_tag( $param, $value );
+				\add_rewrite_tag( $param, $value );
 			}
 		}
 	}
@@ -164,7 +161,7 @@ class VS_WP_Endpoint {
 	protected function register_rewrite_endpoints() {
 		if ( ! empty( $this->rewrite_endpoint ) ) {
 			foreach ( $this->rewrite_endpoint as $slug => $arr ) {
-				add_rewrite_endpoint( $slug, $arr['type'] );
+				\add_rewrite_endpoint( $slug, $arr['type'] );
 			}
 		}
 	}
@@ -181,7 +178,7 @@ class VS_WP_Endpoint {
 	 *
 	 * @return $this
 	 */
-	public function add_endpoint( $endpoint = '', $endpoint_type = EP_ROOT, $callback = array() ) {
+	public function add_endpoint( $endpoint = '', $endpoint_type = \EP_ROOT, $callback = array() ) {
 		if ( ! isset( $this->rewrite_endpoint[ $endpoint ] ) ) {
 			$this->rewrite_endpoint[ $endpoint ] = array(
 				'type'     => $endpoint_type,

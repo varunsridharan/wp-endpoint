@@ -1,12 +1,34 @@
-# VS WP Endpoint
+# WP Endpoint
 Simple Lib To Handle Creation of Custom Endpoints Or Rewrites in WordPress 
+
+## Installation
+The preferred way to install this extension is through [Composer](http://getcomposer.org/download/).
+
+To install **WP_EndPoint library**, simply:
+
+    $ composer require Varunsridharan/WP_Endpoint
+
+The previous command will only install the necessary files, if you prefer to **download the entire source code** you can use:
+
+    $ composer require Varunsridharan/WP_Endpoint --prefer-source
+
+You can also **clone the complete repository** with Git:
+
+    $ git clone https://github.com/varunsridharan/wp-endpoint.git
+
+Or **install it manually**:
+
+[Download WP_Endpoint.php](https://raw.githubusercontent.com/varunsridharan/wp-endpoint/master/class-endpoint.php):
+
+    $ wget https://raw.githubusercontent.com/varunsridharan/wp-endpoint/master/class-endpoint.php
+
 
 ## Usage
 ```php
-$vs_wp_endpoint = new VS_WP_Endpoint('customprefix');
+$vs_wp_endpoint = new \Varunsridharan\WordPress\Endpoint('customprefix');
 ```
 
-### Add End Point [ add_endpoint( $endpoint, $endpoint_type, $callback) ]
+### Add End Point [ `add_endpoint( $endpoint, $endpoint_type, $callback)` ]
 ```php
 /**
  * Adds Custom Endpoints To Endpoints Array.
@@ -21,9 +43,7 @@ $vs_wp_endpoint = new VS_WP_Endpoint('customprefix');
  *
  * @return $this
  */
- ```
- #### PHP Code
- ```php
+ 
  // With Action Trigger
  $vs_wp_endpoint->add_endpoint('myendpoint',EP_ROOT,'myendpoint_action');
  
@@ -50,11 +70,10 @@ class VS_CALLBACK_HANDLER{
 	}
 }
 
-
 ```
 ---
 
-### Add Rewrite Rules [ add_rewrite_rule( $path, $after ) ]
+### Add Rewrite Rules [ `add_rewrite_rule( $path, $after )` ]
 ```php
 /**
  * Adds Custom Rewrite Rules.
@@ -64,10 +83,7 @@ class VS_CALLBACK_HANDLER{
  *
  * @return $this
  */
-```
-
-#### PHP Code
-```php
+ 
 // Below Will Be Converted into **http://example.com/mypath/22/xxx/
 $vs_wp_endpoint->add_rewrite_rule('mypath/{user_id}/{user_name}','top');
 
