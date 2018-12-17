@@ -10,8 +10,9 @@
 namespace Varunsridharan\WordPress;
 
 /**
- * Class VS_WP_Endpoint
+ * Class Endpoint
  *
+ * @package Varunsridharan\WordPress
  * @author Varun Sridharan <varunsridharan23@gmail.com>
  * @since 1.0
  */
@@ -65,7 +66,7 @@ class Endpoint {
 	protected $value_pattern_replace = '([^\/]+)';
 
 	/**
-	 * VSP_WP_Router constructor.
+	 * Endpoint constructor.
 	 *
 	 * @param string $prefix Used to set prefeix for query args.
 	 */
