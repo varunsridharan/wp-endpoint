@@ -29,5 +29,10 @@
 	  "role"     : "Developer"
 	}
   ],
-  "require"     : { }
+  "require"     : { },
+  "autoload"    : {
+	"files" : [
+	  "class-endpoint.php"
+	]
+  }
 }
