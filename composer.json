@@ -31,8 +31,8 @@
   ],
   "require"     : { },
   "autoload"    : {
-	"files" : [
-	  "class-endpoint.php"
-	]
+	"psr-4" : {
+	  "Varunsridharan\\WordPress\\" : "./src"
+	}
   }
 }
