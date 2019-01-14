@@ -1,6 +1,13 @@
 # WP Endpoint
 Simple Lib To Handle Creation of Custom Endpoints Or Rewrites in WordPress 
 
+[![Latest Stable Version](https://poser.pugx.org/varunsridharan/wp-endpoint/version)](https://packagist.org/packages/varunsridharan/wp-endpoint)
+[![Total Downloads](https://poser.pugx.org/varunsridharan/wp-endpoint/downloads)](https://packagist.org/packages/varunsridharan/wp-endpoint)
+[![Latest Unstable Version](https://poser.pugx.org/varunsridharan/wp-endpoint/v/unstable)](//packagist.org/packages/varunsridharan/wp-endpoint)
+[![License](https://poser.pugx.org/varunsridharan/wp-endpoint/license)](https://packagist.org/packages/varunsridharan/wp-endpoint)
+[![composer.lock available](https://poser.pugx.org/varunsridharan/wp-endpoint/composerlock)](https://packagist.org/packages/varunsridharan/wp-endpoint)
+
+
 ## Installation
 The preferred way to install this extension is through [Composer](http://getcomposer.org/download/).
 
@@ -93,4 +100,4 @@ $vs_wp_endpoint->add_rewrite_rule('welcome/{verify_id}','top');
 
 ---
 ## Sponsored By
-[![DigitalOcean](https://vsp.ams3.cdn.digitaloceanspaces.com/cdn/DO_Logo_Horizontal_Blue.png)](https://s.svarun.in/Ef)
+[![DigitalOcean](https://vsp.ams3.cdn.digitaloceanspaces.com/cdn/DO_Logo_Horizontal_Blue-small.png)](https://s.svarun.in/Ef)  [![JetBrains](https://vsp.ams3.cdn.digitaloceanspaces.com/cdn/phpstorm-small.png?v3)](https://www.jetbrains.com)
