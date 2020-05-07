@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Varunsridharan\WordPress\Endpoint</title>
+
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-Varunsridharan.html">
+						Varunsridharan<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-Varunsridharan.WordPress.html">
+						WordPress					</a>
+
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Varunsridharan.WordPress.Endpoint.html">Endpoint</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Varunsridharan.WordPress.html" title="Summary of Varunsridharan\WordPress"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Endpoint</h1>
+
+
+	<div class="description">
+	<p>Class Endpoint</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Varunsridharan.html">Varunsridharan</a>\<a href="namespace-Varunsridharan.WordPress.html">WordPress</a><br>
+		<b>Package:</b> Varunsridharan\WordPress<br>
+
+				<b>Author:</b>
+				Varun Sridharan <a href="&#109;&#x61;i&#108;&#x74;&#111;&#58;&#x76;&#97;&#114;&#x75;&#110;&#115;&#x72;&#105;&#x64;&#x68;&#97;&#x72;&#x61;&#110;&#x32;3&#64;&#x67;&#109;&#97;&#x69;&#108;&#46;&#x63;&#111;&#109;">&#x76;&#97;&#114;&#x75;&#110;&#115;&#x72;&#105;&#x64;&#x68;&#97;&#x72;&#x61;&#110;&#x32;3&#64;&#x67;&#109;&#97;&#x69;&#108;&#46;&#x63;&#111;&#109;</a><br>
+				<b>Since:</b>
+				1.0<br>
+			<b>Located at</b> <a href="source-class-Varunsridharan.WordPress.Endpoint.html#12-253" title="Go to source code">src/Endpoint.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Varunsridharan.WordPress.Endpoint.html#68-79" title="Go to source code">__construct</a>( <span>string <var>$prefix</var> = <span class="php-quote">''</span> </span> )</code>
+
+		<div class="description short">
+			<p>Endpoint constructor.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Endpoint constructor.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$prefix</var></dt>
+					<dd>Used to set prefeix for query args.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="prefix" id="_prefix">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_prefix">#</a>
+		<code><a href="source-class-Varunsridharan.WordPress.Endpoint.html#81-89" title="Go to source code">prefix</a>( <span>string <var>$prefix</var> = <span class="php-quote">''</span> </span> )</code>
+
+		<div class="description short">
+			<p>Sets Prefix.
+Used to set prefeix for query args.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Sets Prefix.
+Used to set prefeix for query args.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$prefix</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parse_request" id="_parse_request">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parse_request">#</a>
+		<code><a href="source-class-Varunsridharan.WordPress.Endpoint.html#91-116" title="Go to source code">parse_request</a>( <span> <var>$wp</var></span> )</code>
+
+		<div class="description short">
+			<p>Parses Request And Triggers Callback / Action.
+Based On the $callback Arg when using add_endpoint()</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Parses Request And Triggers Callback / Action.
+Based On the $callback Arg when using add_endpoint()</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$wp</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+				<h4>Uses</h4>
+				<div class="list">
+						\call_user_func()<br>
+						\call_user_func_array()<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="flush" id="_flush">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_flush">#</a>
+		<code><a href="source-class-Varunsridharan.WordPress.Endpoint.html#118-125" title="Go to source code">flush</a>( )</code>
+
+		<div class="description short">
+			<p>Flushes WordPress's rewrite rules.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Flushes WordPress's rewrite rules.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="on_wp_init" id="_on_wp_init">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_on_wp_init">#</a>
+		<code><a href="source-class-Varunsridharan.WordPress.Endpoint.html#127-134" title="Go to source code">on_wp_init</a>( )</code>
+
+		<div class="description short">
+			<p>On WP Init.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>On WP Init.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="register_rewrite_rules" id="_register_rewrite_rules">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_register_rewrite_rules">#</a>
+		<code><a href="source-class-Varunsridharan.WordPress.Endpoint.html#136-147" title="Go to source code">register_rewrite_rules</a>( )</code>
+
+		<div class="description short">
+			<p>Registers Rewrite Rules With WordPress.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Registers Rewrite Rules With WordPress.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="register_rewrite_tags" id="_register_rewrite_tags">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_register_rewrite_tags">#</a>
+		<code><a href="source-class-Varunsridharan.WordPress.Endpoint.html#149-158" title="Go to source code">register_rewrite_tags</a>( )</code>
+
+		<div class="description short">
+			<p>Registers Rewrite Tag With WordPress.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Registers Rewrite Tag With WordPress.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="register_rewrite_endpoints" id="_register_rewrite_endpoints">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_register_rewrite_endpoints">#</a>
+		<code><a href="source-class-Varunsridharan.WordPress.Endpoint.html#160-169" title="Go to source code">register_rewrite_endpoints</a>( )</code>
+
+		<div class="description short">
+			<p>Registers Rewrite Endpoints With WordPress.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Registers Rewrite Endpoints With WordPress.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="add_endpoint" id="_add_endpoint">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_add_endpoint">#</a>
+		<code><a href="source-class-Varunsridharan.WordPress.Endpoint.html#171-191" title="Go to source code">add_endpoint</a>( <span>string <var>$endpoint</var> = <span class="php-quote">''</span></span>, <span>integer <var>$endpoint_type</var> = \EP_ROOT</span>, <span>array|string <var>$callback</var> = <span class="php-keyword1">array</span>() </span> )</code>
+
+		<div class="description short">
+			<p>Adds Custom Endpoints To Endpoints Array.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Adds Custom Endpoints To Endpoints Array.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$endpoint</var></dt>
+					<dd></dd>
+					<dt><var>$endpoint_type</var></dt>
+					<dd></dd>
+					<dt><var>$callback</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>$this
+				</div>
+
+
+				<h4>Example</h4>
+				<div class="list">
+						add_endpoint('world/',EP_PAGES,array(&amp;$this,'page_callback'))<br>
+						add_endpoint('hello/',EP_PAGES,'my_page_calback')<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="add_rewrite_rule" id="_add_rewrite_rule">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_add_rewrite_rule">#</a>
+		<code><a href="source-class-Varunsridharan.WordPress.Endpoint.html#193-221" title="Go to source code">add_rewrite_rule</a>( <span>string <var>$path</var> = <span class="php-quote">''</span></span>, <span>string <var>$after</var> = <span class="php-quote">'top'</span> </span> )</code>
+
+		<div class="description short">
+			<p>Adds Custom Rewrite Rules.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Adds Custom Rewrite Rules.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$path</var></dt>
+					<dd></dd>
+					<dt><var>$after</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>$this
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="add_tag" id="_add_tag">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_add_tag">#</a>
+		<code><a href="source-class-Varunsridharan.WordPress.Endpoint.html#223-237" title="Go to source code">add_tag</a>( <span>string <var>$tag</var> = <span class="php-quote">''</span></span>, <span>string <var>$regex</var> = <span class="php-quote">''</span></span>, <span>boolean <var>$force</var> = <span class="php-keyword1">false</span> </span> )</code>
+
+		<div class="description short">
+			<p>Adds Rewrite Tag.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Adds Rewrite Tag.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tag</var></dt>
+					<dd></dd>
+					<dt><var>$regex</var></dt>
+					<dd></dd>
+					<dt><var>$force</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>$this
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="add_query_vars" id="_add_query_vars">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_add_query_vars">#</a>
+		<code><a href="source-class-Varunsridharan.WordPress.Endpoint.html#239-252" title="Go to source code">add_query_vars</a>( <span>array <var>$vars</var> = <span class="php-keyword1">array</span>() </span> )</code>
+
+		<div class="description short">
+			<p>Adds Custom Query Vars TO WordPress.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Adds Custom Query Vars TO WordPress.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$vars</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="version" id="$version">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Varunsridharan.WordPress.Endpoint.html#20-25" title="Go to source code"><var>$version</var></a>
+
+			<div class="description short">
+				<p>Version</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Version</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$version" class="anchor">#</a>
+				<code><span class="php-quote">'1.0'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="rewrite_endpoint" id="$rewrite_endpoint">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Varunsridharan.WordPress.Endpoint.html#27-32" title="Go to source code"><var>$rewrite_endpoint</var></a>
+
+			<div class="description short">
+				<p>Rewrite_endpoint</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Rewrite_endpoint</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$rewrite_endpoint" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="rewrite_rule" id="$rewrite_rule">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Varunsridharan.WordPress.Endpoint.html#34-39" title="Go to source code"><var>$rewrite_rule</var></a>
+
+			<div class="description short">
+				<p>Rewrite_rule</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Rewrite_rule</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$rewrite_rule" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="rewrite_tag" id="$rewrite_tag">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Varunsridharan.WordPress.Endpoint.html#41-46" title="Go to source code"><var>$rewrite_tag</var></a>
+
+			<div class="description short">
+				<p>Rewrite_tag</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Rewrite_tag</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$rewrite_tag" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="rewrite_prefix" id="$rewrite_prefix">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Varunsridharan.WordPress.Endpoint.html#48-51" title="Go to source code"><var>$rewrite_prefix</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$rewrite_prefix" class="anchor">#</a>
+				<code><span class="php-quote">'wp_router'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="parameter_pattern" id="$parameter_pattern">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Varunsridharan.WordPress.Endpoint.html#53-56" title="Go to source code"><var>$parameter_pattern</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$parameter_pattern" class="anchor">#</a>
+				<code><span class="php-quote">'/{([\w\d]+)}/'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="value_pattern" id="$value_pattern">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Varunsridharan.WordPress.Endpoint.html#58-61" title="Go to source code"><var>$value_pattern</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$value_pattern" class="anchor">#</a>
+				<code><span class="php-quote">'(?P&lt;$1&gt;[^/]+)'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="value_pattern_replace" id="$value_pattern_replace">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Varunsridharan.WordPress.Endpoint.html#63-66" title="Go to source code"><var>$value_pattern_replace</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$value_pattern_replace" class="anchor">#</a>
+				<code><span class="php-quote">'([^\/]+)'</span></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js?58699d70ee1015ed63e509c64f4dd9d3b29ddbbe"></script>
+<script src="elementlist.js?b68fc2903c7850e977a92930b3c205be2e595749"></script>
+</body>
+</html>
