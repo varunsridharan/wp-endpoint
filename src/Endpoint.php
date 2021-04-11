@@ -96,7 +96,6 @@ if ( ! class_exists( '\Varunsridharan\WordPress\Endpoint' ) ) {
 		 * @param $wp
 		 *
 		 * @uses \call_user_func()
-		 *
 		 * @uses \call_user_func_array()
 		 */
 		public function parse_request( $wp ) {
@@ -136,8 +135,6 @@ if ( ! class_exists( '\Varunsridharan\WordPress\Endpoint' ) ) {
 
 		/**
 		 * Registers Rewrite Rules With WordPress.
-		 *
-		 * @static
 		 */
 		protected function register_rewrite_rules() {
 			if ( ! empty( $this->rewrite_rule ) ) {
@@ -177,8 +174,8 @@ if ( ! class_exists( '\Varunsridharan\WordPress\Endpoint' ) ) {
 		 * @param array|string $callback
 		 *
 		 * @return $this
-		 * @example add_endpoint('world/',EP_PAGES,array(&$this,'page_callback'))
 		 *
+		 * @example add_endpoint('world/',EP_PAGES,array(&$this,'page_callback'))
 		 * @example add_endpoint('hello/',EP_PAGES,'my_page_calback')
 		 */
 		public function add_endpoint( $endpoint = '', $endpoint_type = \EP_ROOT, $callback = array() ) {

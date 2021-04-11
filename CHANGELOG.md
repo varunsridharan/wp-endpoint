@@ -27,20 +27,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ## 1.0 - 17/12/2018
 ### First Release
 
+
 <!--
 ## Unreleased
 
 ## 1.0 - 01/02/2020
 ### Added
-
 ### Changed
-
 ### Deprecated
-
 ### Removed
-
 ### Fixed
-
 ### Security
-
 -->
