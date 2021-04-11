@@ -98,6 +98,9 @@ $vs_wp_endpoint->add_rewrite_rule('mypath/{user_id}/{user_name}','top');
 $vs_wp_endpoint->add_rewrite_rule('welcome/{verify_id}','top');
 ```
 
+
 ---
-## Sponsored By
-[![DigitalOcean](https://vsp.ams3.cdn.digitaloceanspaces.com/cdn/DO_Logo_Horizontal_Blue-small.png)](https://s.svarun.in/Ef)  [![JetBrains](https://vsp.ams3.cdn.digitaloceanspaces.com/cdn/phpstorm-small.png?v3)](https://www.jetbrains.com)
+
+<!-- START common-footer.mustache  -->
+
+<!-- END common-footer.mustache  -->

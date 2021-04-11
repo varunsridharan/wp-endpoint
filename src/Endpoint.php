@@ -8,6 +8,7 @@
  */
 
 namespace Varunsridharan\WordPress;
+
 if ( ! class_exists( '\Varunsridharan\WordPress\Endpoint' ) ) {
 	/**
 	 * Class Endpoint
@@ -22,7 +23,7 @@ if ( ! class_exists( '\Varunsridharan\WordPress\Endpoint' ) ) {
 		 *
 		 * @var string
 		 */
-		public $version = '1.0';
+		public $version = '1.5';
 
 		/**
 		 * Rewrite_endpoint
